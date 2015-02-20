@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	clear();
 	init();
 	draw();
 	
@@ -16,12 +15,13 @@ $(document).ready(function() {
 	
 	function vanish() {
 		$('.dot').on('mouseenter', function() {
-			$(this).fadeTo("slow", 0);
+			$(this).fadeTo('slow', 0);
 		});
 	}
 	
+	// initializes the grid with a loop
+	
 	function init() {
-		// loops through to create rows and columns for dots
 		for (var i = 0; i < 20; i++) {
 			for (var j = 0; j < 20; j++) {
 				$("<div></div>").addClass('dot').appendTo('.pad');
@@ -29,6 +29,8 @@ $(document).ready(function() {
 			$("<div></div>").css({'clear': 'both'}).appendTo('.pad');
 		};
 	}
+	
+	// custom grid size initiation
 	
 	$('.custom').on('click',  function() {
 		clear();
@@ -55,7 +57,6 @@ $(document).ready(function() {
 	$('.vanish').on('click', function() {
 		vanish();
 	});
-	
 });
 
 

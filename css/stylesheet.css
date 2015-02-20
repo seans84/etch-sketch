@@ -39,7 +39,7 @@ button {
 }
 
 .dot {
-	border-radius: 90px;
+	border-radius: 10px;
 	height: 43px;
 	width: 43px;
 	background-color: #ff9933;
@@ -48,5 +48,5 @@ button {
 }
 
 .draw {
-	background-color: #ff0000;
+	background-color: #903a00;
 }
